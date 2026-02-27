@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Plumber in [City, State] | 24/7 Emergency [Company Name]</title>
+    <meta name="description" content="Professional plumbing services in [City]. Licensed & Insured. 24/7 emergency repairs, drain cleaning, and water heaters. Call [Phone] for a free quote!">
+    <style>
+        /* --- CSS VARIABLES & THEME --- */
+        :root {
+            --primary: #004aad; /* Trust Blue */
+            --secondary: #ff4d00; /* Urgency Orange/Red */
+            --dark: #1a1a1a;
+            --light: #f4f7f6;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--white);
+        }
+
+        /* --- NAVIGATION --- */
+        header {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .nav-phone {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-phone:hover {
+            background: #e64500;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 74, 173, 0.8)), url('https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 5% 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-inline: auto;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: inline-block;
+        }
+
+        .btn-primary { background: var(--secondary); color: var(--white); }
+        .btn-outline { border: 2px solid var(--white); color: var(--white); }
+
+        /* --- TRUST BAR --- */
+        .trust-bar {
+            background: var(--light);
+            padding: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* --- SERVICES --- */
+        .section { padding: 60px 5%; text-align: center; }
+        .section h2 { font-size: 2rem; margin-bottom: 3rem; color: var(--primary); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .card h3 { margin-bottom: 1rem; }
+
+        /* --- ABOUT / WHY US --- */
+        .why-us { background: var(--light); }
+        
+        .feature-list {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* --- CONTACT SECTION --- */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            text-align: left;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-btn {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 40px 5%;
+            text-align: center;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .feature-list, .contact-container { grid-template-columns: 1fr; }
+            header { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">[Company Name]</div>
+        <a href="tel:5551234567" class="nav-phone">📞 (555) 123-4567</a>
+    </header>
+
+    <section class="hero">
+        <h1>Fast, Reliable Plumber in [City, State]</h1>
+        <p>Licensed professionals available 24/7 for emergencies, repairs, and installations. We show up on time and get it fixed right the first time.</p>
+        <div class="cta-group">
+            <a href="tel:5551234567" class="btn btn-primary">Emergency Service Call</a>
+            <a href="#quote" class="btn btn-outline">Get Free Estimate</a>
+        </div>
+    </section>
+
+    <div class="trust-bar">
+        <span>✅ Licensed & Insured</span>
+        <span>⭐ 5-Star Rated Service</span>
+        <span>⏱️ 60-Min Emergency Response</span>
+    </div>
+
+    <section class="section" id="services">
+        <h2>Our Professional Plumbing Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Emergency Plumbing</h3>
+                <p>Burst pipes, flooding, or major leaks? We are on call 24/7 to protect your home from water damage.</p>
+            </div>
+            <div class="card">
+                <h3>Drain Cleaning</h3>
+                <p>Stubborn clogs? We use professional-grade equipment to clear lines and prevent future backups.</p>
+            </div>
+            <div class="card">
+                <h3>Water Heaters</h3>
+                <p>Expert repair and installation for tank and tankless water heaters. Get your hot water back today!</p>
+            </div>
+            <div class="card">
+                <h3>Leak Detection</h3>
+                <p>Hidden leaks can cost thousands. Our high-tech detection finds the source without tearing up your home.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section why-us">
+        <h2>Why [City] Residents Trust Us</h2>
+        <div class="feature-list">
+            <div><strong>✓ Upfront Pricing:</strong> No hidden fees. You'll know the cost before we start.</div>
+            <div><strong>✓ Local Experts:</strong> Serving [City] for [X] years with specialized local knowledge.</div>
+            <div><strong>✓ Clean & Respectful:</strong> We wear shoe covers and clean up the workspace thoroughly.</div>
+            <div><strong>✓ Modern Technology:</strong> We use the latest tools for faster, non-invasive repairs.</div>
+        </div>
+    </section>
+
+    <section class="section" id="quote">
+        <div class="contact-container">
+            <div>
+                <h2>Contact Us Today</h2>
+                <p>Need a quote or have a question? Fill out the form or give us a call. Our dispatchers are ready to help!</p>
+                <br>
+                <p><strong>Business Hours:</strong><br>Mon - Sun: 24/7 (Emergency Service)<br>Office Hours: 8:00 AM - 6:00 PM</p>
+                <br>
+                <p><strong>Service Area:</strong><br>[City], [Nearby Town 1], [Nearby Town 2]</p>
+            </div>
+            <div>
+                <form action="#">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="">Select Service Needed</option>
+                        <option value="emergency">Emergency Repair</option>
+                        <option value="drain">Drain Cleaning</option>
+                        <option value="heater">Water Heater</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                    <textarea rows="4" placeholder="Tell us about your issue..."></textarea>
+                    <button type="submit" class="form-btn">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 [Company Name] | [City, State] | Licensed Plumber #[License No]</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">Providing expert plumbing solutions for homeowners and businesses since [Year].</p>
+    </footer>
+
+</body>
+</html>
